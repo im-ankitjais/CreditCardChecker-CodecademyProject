@@ -61,7 +61,7 @@ function validateCred(card) {
     
 } 
 
-
+//Next Function findInvalidCards
 
 function findInvalidCards(credCard) {
     let invalidCards = [];
@@ -75,7 +75,7 @@ function findInvalidCards(credCard) {
 }
 
 let arrayInvalid = findInvalidCards(batch);
-
+//Next Function idInvalidCardCompanies
 function idInvalidCardCompanies(invalid) {
     let companies = [];
     for (k = 0; k < invalid.length; k ++) {
@@ -94,5 +94,5 @@ function idInvalidCardCompanies(invalid) {
     }
     return companies;
 }
-
+//This statement display the message to console of browser in developer tools.
 console.log(idInvalidCardCompanies(arrayInvalid));
